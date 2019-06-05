@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style media="screen">
+	iframe{
+		height:100%;
+        width:100%
+	}
+	
+	#video{
+		height:400px;
+	}
+	#mid{
+		float:left;
+		margin-left: 20%;
+	}
+	#left{
+		float:left;
+		
+	}
+	#right{
+		float:right;
+		
+	}
+	div{
+		 margin:0;
+    	padding:0;
+	}
+  </style>
+
+  <script type="text/javascript" >
+
+function lup(){
+window.location.href="lup" ;
+}
+function lleft(){
+window.location.href="lleft" ;
+}
+function lright(){
+window.location.href="lright" ;
+}
+function ldown(){
+window.location.href="ldown" ;
+}
+function rup(){
+window.location.href="rup" ;
+}
+function rleft(){
+window.location.href="rleft" ;
+}
+function rright(){
+window.location.href="rright" ;
+}
+function rdown(){
+window.location.href="rdown" ;
+}
+function stop(){
+window.location.href="stop" ;
+}
+function auto(){
+window.location.href="auto" ;
+}
+  </script>
+</head>
+<body>
+	<div id="video">
+<iframe src="http://www.iplaypy.com/uploads/allimg/131219/2-13121911141a01.jpg" frameborder="0" ></iframe>
+	</div>
+	<div id= "control">
+		<br><div id='left'>
+			control:
+			<div><button style="margin-left: 20%" type="button" onclick="lup();">up</button></div>
+			<br><div><button  type="button"  onclick="lleft();">left</button>
+				<button   type="button" onclick="lright();">right</button>
+			</div>
+			<br><div><button style="margin-left: 20%" type="button"  onclick="ldown();">down</button></div>
+		
+		</div>
+		<div id='mid'>
+			<br><form action="/" method="post">
+				speeh: <input type="number" name="num" min="1" max="10" />
+				<input type="submit" value="set" />
+			</form>
+			<br><button style="margin-left: 30px;" type="button"  onclick="auto();">auto</button>
+			<br><br><button style="margin-left: 30px;"type="button"  onclick="stop();">stop</button>
+		</div>
+			<div id= "right">
+			car:
+			<div><button style="margin-left: 20%" type="button" onclick="rup();">go</button></div>
+			<br><div><button  type="button"  onclick="rleft();">left</button>
+				<button   type="button" onclick="rright();">right</button>
+			</div>
+			<br><div><button style="margin-left: 20%" type="button"  onclick="rdown();">back</button></div>
+		
+	</div>
+</body>
+</html>

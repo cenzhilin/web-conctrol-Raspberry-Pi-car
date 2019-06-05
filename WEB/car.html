@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style media="screen">
+	iframe{
+		height:100%;
+        width:100%
+	}
+	
+	#video{
+		height:400px;
+	}
+	#mid,#left{
+		float:left;
+		
+	}
+	#right{
+		float:left;
+		margin-left: 10px
+	}
+	div{
+		 margin:0;
+    	padding:0;
+	}
+  </style>
+
+  <script>
+
+function lup(){
+window.location.href="127.0.0.1:5000" 
+}
+
+  </script>
+</head>
+<body>
+	<div id="video">
+<iframe src="https://www.youku.com" frameborder="0" ></iframe>
+	</div>
+	<div id= "control">
+		<div id='left'>
+			云台控制:
+			<div><img src="up.jpg" style=" height: 50px;" alt="up" id ="up" name="up"  onclick="lup();"></div>
+			<div><img src="left.jpg"style="margin-left: 38px;float:left;height: 50px;" alt="left"   onclick="lleft();">
+				<img src="right.jpg"style="float:left;height: 50px;" alt="right"  onclick="lright();">
+			</div>
+			<div><img src="down.jpg" style=" height:43px;" alt="down"  onclick="ldown();"></div>
+			
+		</div>
+		<div id='mid'>
+			<br><form action="/example/html5/demo_form.asp" method="get">
+				速度: <input type="number" name="points" min="1" max="10" />
+				<input type="submit" value="设置" />
+			</form>
+			<br><button style="margin-left: 30px;" type="button">自动寻路</button>
+			<br><br><button style="margin-left: 30px;"type="button">紧急暂停</button>
+		</div>
+	<div id= "right">
+			小车控制:
+			<div><img src="up.jpg" style=" height: 50px;" alt="up" id ="up" name="up"  onclick="rup();"></div>
+			<div><img src="left.jpg"style="margin-left: 38px;float:left;height: 50px;" alt="left"   onclick="rleft();">
+				<img src="right.jpg"style="float:left;height: 50px;" alt="right"  onclick="rright();">
+			</div>
+			<div><img src="down.jpg" style=" height:43px;" alt="down"  onclick="rdown();"></div>
+			
+	</div>
+</body>
+</html>

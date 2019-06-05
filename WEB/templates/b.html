@@ -1,0 +1,124 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static',filename='lib/bs/css/bootstrap.min.css',_external=True)}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='lib/bs/css/style.css',_external=True)}}">
+</head>
+<body>
+<div class="container">
+
+	<div class="row">
+<img src="{{ url_for('video_feed') }}" width="100%">
+
+	</div>
+
+
+
+	<div class="row">
+
+<div class="col-xs-4">
+	<div class="row" >
+	<img src="../static/while.png" alt="" >
+	<img src="../static/up.png" alt="" onclick="lup()">
+
+	</div>
+	<div class="row">
+	<img src="../static/left.png" alt="" onclick="lleft()">
+	<img src="../static/stop.png" alt="" onclick="lstop()">
+	<img src="../static/right.png" alt="" onclick="lright()">
+	</div>
+	<div class="row">
+	<img src="../static/while.png" alt="" >
+	<img src="../static/down.png" alt="" onclick="ldown()">
+	</div>
+</div>
+
+<div class="col-xs-4">
+
+	<div class="row">
+	<img src="../static/dec.png" alt="" onclick="dec()">
+	<span style="font-size: 35px;">30</span>
+	<img src="../static/add.png" alt="" onclick="add()">
+	</div>
+
+
+	<div class="row">
+	<img src="../static/startauto.png" alt="">
+	</div>
+
+</div>
+
+
+
+<div class="col-xs-4">
+	<div class="row" >
+	<img src="../static/while.png" alt="" >
+	<img src="../static/up.png" alt="" onclick="rup()">
+	</div>
+	<div class="row">
+	<img src="../static/left.png" alt="" onclick="rleft()">
+	<img src="../static/stop.png" alt=""  onclick="rstop()">
+	<img src="../static/right.png" alt="" onclick="rright()">
+	</div>
+	<div class="row">
+	<img src="../static/while.png" alt="">
+	<img src="../static/down.png" alt="" onclick="rdown()">
+	</div>
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+	<script src="{{url_for('static',filename='lib/bs/js/bootstrap.min.js',_external=True)}}"></script>
+	<script src="{{url_for('static',filename='lib/bs/jquery-3.3.1.min.js',_external=True)}}"></script>
+	 
+
+	 <script type="text/javascript" >
+	function lup(){
+	window.location.href="lup" ;
+	}
+	function lleft(){
+	window.location.href="lleft" ;
+	}
+	function lright(){
+	window.location.href="lright" ;
+	}
+	function ldown(){
+	window.location.href="ldown" ;
+	}
+	function rup(){
+	window.location.href="rup" ;
+	}
+	function rleft(){
+	window.location.href="rleft" ;
+	}
+	function rright(){
+	window.location.href="rright" ;
+	}
+	function rdown(){
+	window.location.href="rdown" ;
+	}
+	function stop(){
+	window.location.href="stop" ;
+	}
+	function auto(){
+	window.location.href="auto" ;
+	}
+	function add(){
+	window.location.href="add" ;
+	}
+	function dec(){
+	window.location.href="dec" ;
+	}
+  </script>
+
+</body>
+</html>
